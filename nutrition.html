@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="manifest" href="/manifest.json">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#d23369">
     <meta charset="UTF-8">
     <title>SportLife - Питание</title>
@@ -26,8 +26,7 @@
             border-radius: 15px;
             overflow: hidden;
             box-shadow: 0 5px 15px rgba(255,105,180,0.1);
-            height: 100%; 
-            flex-direction: column;
+            height: 100%;
         }
         
         .food-img-container {
@@ -41,8 +40,6 @@
             object-fit: cover;
             transition: transform 0.3s;
         }
-        
-    
         
         .food-caption {
             padding: 1rem;
@@ -106,7 +103,7 @@
         <div class="food-gallery">
             <div class="food-item">
                 <div class="food-img-container">
-                    <img src="food1.jpg" alt="Энергетический завтрак">
+                    <img src="images/food1.jpg" alt="Энергетический завтрак">
                 </div>
                 <div class="food-caption">
                     <h3>Энергетический завтрак</h3>
@@ -115,7 +112,7 @@
             
             <div class="food-item">
                 <div class="food-img-container">
-                    <img src="food2.jpg" alt="Питательный обед">
+                    <img src="images/food2.jpg" alt="Питательный обед">
                 </div>
                 <div class="food-caption">
                     <h3>Питательный обед</h3>
@@ -124,7 +121,7 @@
             
             <div class="food-item">
                 <div class="food-img-container">
-                    <img src="food3.jpg" alt="Легкий ужин">
+                    <img src="images/food3.jpg" alt="Легкий ужин">
                 </div>
                 <div class="food-caption">
                     <h3>Легкий ужин</h3>
@@ -133,7 +130,7 @@
             
             <div class="food-item">
                 <div class="food-img-container">
-                    <img src="food4.jpg" alt="Полезный перекус">
+                    <img src="images/food4.jpg" alt="Полезный перекус">
                 </div>
                 <div class="food-caption">
                     <h3>Полезный перекус</h3>
@@ -168,17 +165,17 @@
        <p>Мой Telegram: <a href="https://t.me/borshevikas">@borshevikas</a></p>
     </footer>
     <script>
-  if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-      navigator.serviceWorker.register('/service-worker.js')
-        .then(registration => {
-          console.log('ServiceWorker registration successful');
-        })
-        .catch(err => {
-          console.log('ServiceWorker registration failed: ', err);
-        });
-    });
-  }
-</script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('service-worker.js')
+                    .then(registration => {
+                        console.log('ServiceWorker registration successful');
+                    })
+                    .catch(err => {
+                        console.log('ServiceWorker registration failed: ', err);
+                    });
+            });
+        }
+    </script>
 </body>
 </html>
